@@ -1,0 +1,21 @@
+require:
+  - rubocop-rspec
+AllCops:
+  DisplayCopNames: true
+  NewCops: enable
+  TargetRubyVersion: 3.1
+Style/Documentation:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 18
+Metrics/BlockLength:
+  Max: 40
+Gemspec/DevelopmentDependencies:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Enabled: false
+RSpec/ExampleLength:
+  Max: 30
+Layout/LineLength:
+  Exclude: 
+    - spec/quelink_mg/resp/*_spec.rb
