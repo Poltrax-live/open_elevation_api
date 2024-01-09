@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.open-elevation.com/api/v1/lookup
+    body:
+      encoding: UTF-8
+      string: '{"locations":[{"latitude":51.01,"longitude":21.01}]}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.21.1
+      Date:
+      - Tue, 09 Jan 2024 18:21:25 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Origin,Accept,Content-Type,X-Requested_with,X-CSRF-Token
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"latitude":51.01,"longitude":21.01,"elevation":290.0}]}'
+  recorded_at: Tue, 09 Jan 2024 18:21:25 GMT
+recorded_with: VCR 6.1.0

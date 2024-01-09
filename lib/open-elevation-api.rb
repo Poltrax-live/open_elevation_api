@@ -6,8 +6,8 @@ require 'active_support'
 require 'active_support/time_with_zone'
 require 'active_support/core_ext/time/zones'
 
-require File.expand_path('open-elevation-api-wrapper/get_elevations.rb', __dir__)
-require File.expand_path('open-elevation-api-wrapper/configuration.rb', __dir__)
+require File.expand_path('open-elevation-api/get_elevations.rb', __dir__)
+require File.expand_path('open-elevation-api/configuration.rb', __dir__)
 
 module OpenElevationApi
   class << self
